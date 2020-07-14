@@ -1,0 +1,16 @@
+scripted_gui = {
+
+	aus_vienna_riot_decision_ui = {
+		context_type = decision_category
+		window_name = "aus_vienna_decision_riots_ui_window"
+	}
+
+	aus_vienna_industrial_decision_ui = {
+		context_type = decision_category
+		window_name = "aus_vienna_decision_industrial_ui_window"
+	}
+
+
+}
+
+#

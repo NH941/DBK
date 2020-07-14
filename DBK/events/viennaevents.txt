@@ -1,0 +1,50 @@
+add_namespace = vienna
+
+news_event = {
+	id = vienna.2
+	title = vienna.2.t
+	desc = vienna.2.d
+	picture = GFX_report_event_czech_soldiers_02.dds
+	major = yes
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		AUS = {
+			has_country_flag = stocks_crash
+		}
+	}
+
+	option = {
+		name = vienna.2.a
+	}
+}
+
+country_event = {
+	id = vienna.1
+	title = vienna.1.t
+	desc = vienna.1.d
+	picture = GFX_report_event_finnish_letter
+
+	mean_time_to_happen = {
+		days = 65
+	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+
+	}
+
+	option = {
+		name = vienna.1.a
+
+		add_ideas = {
+			Vienna_Crash
+			Riots_Street
+		}
+		set_country_flag = stocks_crash
+
+	}
+}

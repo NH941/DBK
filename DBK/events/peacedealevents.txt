@@ -1,0 +1,231 @@
+country_event = {
+	id = peacedeal.1
+	title = peacedeal.1.t
+	desc = peacedeal.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	trigger = {
+		AUS = {
+      has_capitulated = yes
+    }
+  }
+
+  option = {
+		ai_chance = {
+		base = 1
+		}
+		name = peacedeal.1.a
+
+		if = {
+			AND = {
+				GER = {
+					has_war_with = AUS
+				}
+				FRA = {
+					NOT = {
+						has_war_with = AUS
+					}
+				}
+			}
+			GER = {
+				transfer_state = 50
+				transfer_state = 52
+				transfer_state = 53
+				transfer_state = 54
+				transfer_state = 65
+				transfer_state = 66
+				transfer_state = 67
+				transfer_state = 68
+			}
+			CZE = {
+				transfer_state = 9
+				transfer_state = 69
+				transfer_state = 74
+				transfer_state = 75
+			}
+			if = {
+				YUG = {
+					OR = {
+						NOT = {
+							OR = {
+								has_war_with = ITA
+								has_war_with = GER
+							}
+						}
+						has_war_with = AUS
+					}
+				}
+				YUG = {
+					transfer_state = 102
+					transfer_state = 103
+				}
+				103 = {
+					add_core_of = YUG
+				}
+				102 = {
+					add_core_of = YUG
+				}
+			}
+			if = {
+				YUG = {
+					OR = {
+						is_in_faction_with = AUS
+						has_war_with = GER
+						has_war_with = ITA
+					}
+				}
+				ITA = {
+					transfer_state = 102
+					transfer_state = 103
+				}
+				103 = {
+					add_core_of = ITA
+				}
+				102 = {
+					add_core_of = ITA
+				}
+			}
+			if = {
+				ROM = {
+					OR = {
+						NOT = {
+							OR = {
+								has_war_with = ITA
+								has_war_with = GER
+							}
+						}
+						has_war_with = AUS
+					}
+				}
+				ROM = {
+					transfer_state = 76
+					transfer_state = 83
+					transfer_state = 82
+					transfer_state = 84
+				}
+				103 = {
+					add_core_of = ROM
+				}
+				102 = {
+					add_core_of = ROM
+				}
+			}
+			if = {
+				ROM = {
+					OR = {
+						is_in_faction_with = AUS
+						has_war_with = GER
+						has_war_with = ITA
+					}
+				}
+			}
+		}
+		if = {
+			AND = {
+				GER = {
+					has_war_with = AUS
+				}
+				FRA = {
+						has_war_with = AUS
+					}
+			}
+			GER = {
+				transfer_state = 53
+				transfer_state = 54
+				transfer_state = 65
+				transfer_state = 66
+				transfer_state = 67
+				transfer_state = 68
+			}
+			FGD = {
+				transfer_state = 50
+				transfer_state = 52
+			}
+
+			CZE = {
+				transfer_state = 9
+				transfer_state = 69
+				transfer_state = 74
+				transfer_state = 75
+			}
+			if = {
+				YUG = {
+					OR = {
+						NOT = {
+							OR ={
+								has_war_with = ITA
+								has_war_with = GER
+							}
+						}
+						has_war_with = AUS
+					}
+				}
+				YUG = {
+					transfer_state = 102
+					transfer_state = 103
+				}
+				103 = {
+					add_core_of = YUG
+				}
+				102 = {
+					add_core_of = YUG
+				}
+			}
+			if = {
+				YUG = {
+					OR = {
+						is_in_faction_with = AUS
+						has_war_with = GER
+						has_war_with = ITA
+					}
+				}
+				ITA = {
+					transfer_state = 102
+					transfer_state = 103
+				}
+				103 = {
+					add_core_of = ITA
+				}
+				102 = {
+					add_core_of = ITA
+				}
+			}
+			if = {
+				ROM = {
+					OR = {
+						NOT = {
+							OR = {
+								has_war_with = ITA
+								has_war_with = GER
+							}
+						}
+						has_war_with = AUS
+					}
+				}
+				ROM = {
+					transfer_state = 76
+					transfer_state = 83
+					transfer_state = 82
+					transfer_state = 84
+				}
+				103 = {
+					add_core_of = ROM
+				}
+				102 = {
+					add_core_of = ROM
+				}
+			}
+			if = {
+				ROM = {
+					OR = {
+						is_in_faction_with = AUS
+						has_war_with = GER
+						has_war_with = ITA
+					}
+				}
+			}
+		}
+	}
+}

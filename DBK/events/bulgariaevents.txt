@@ -1,0 +1,155 @@
+add_namespace = bulgaria
+
+country_event = {
+	id = bulgaria.17
+	title = bulgaria.17.t
+	desc = bulgaria.17.d
+	picture = GFX_report_event_worried_french
+
+	is_triggered_only = yes
+
+	option = {
+		name = bulgaria.17.a
+		ai_chance = { factor = 90 }
+		ROM = {
+			country_event = bulgaria.18
+			add_to_faction = ROOT
+		}
+
+	}
+
+	option = {
+		name = bulgaria.17.b
+		ai_chance = { factor = 10 }
+		ROM = { country_event = bulgaria.19 }
+	}
+}
+
+# [Country] Accepts
+country_event = {
+	id = bulgaria.18
+	title = bulgaria.18.t
+	desc = bulgaria.18.d
+	picture = GFX_report_event_soldiers_in_frace
+
+	is_triggered_only = yes
+
+	option = {
+		name = bulgaria.18.a
+		effect_tooltip = {
+			add_to_faction = FROM
+		}
+	}
+}
+
+# [Country] Refuses
+country_event = {
+	id = bulgaria.19
+	title = bulgaria.19.t
+	desc = bulgaria.19.d
+	picture = GFX_report_event_finnish_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = bulgaria.19.a
+	}
+}
+
+
+
+
+
+country_event = {
+	id = bulgaria.5432
+	title = bulgaria.5432.t
+	desc = bulgaria.5432.desc
+	picture = GFX_report_event_eng_dambuster2
+
+	fire_only_once = yes   #this means this event can only fire one time
+	is_triggered_only = yes #this means this event can't happen randomly, has to be triggered somewhere else. In our case, your national focus
+
+	option = { # This option will give the war goal
+		name = bulgaria.5432.a #needs to be localized
+		ai_chance = { factor = 60 } #this factor means the AI will almost always pick this one
+		diplomatic_relation = {
+		country = TUR
+		relation = non_agression_pact
+		active = yes
+		}
+
+	news_event = {id = bulgaria.5431}
+	}
+
+	option = { # Last chance to backout! Click this option and literally nothing happens
+		name = bulgaria.1236.b #needs to be localized
+		ai_chance = { factor = 40 } #AI will NOT do
+	}
+}
+
+news_event = {
+	id = bulgaria.5431
+	title = bulgaria.5431.t
+	desc = bulgaria.5431.desc
+	picture = GFX_report_event_eng_dambuster2
+	major = yes
+
+	fire_only_once = yes   #this means this event can only fire one time
+	is_triggered_only = yes #this means this event can't happen randomly, has to be triggered somewhere else. In our case, your national focus
+
+	option = { # Only one option, just an acknowledgment by the player
+		name = bulgaria.5431.a #needs to be localized
+		ai_chance = { factor = 90 } #this factor means the AI will almost always pick this one
+
+	}
+
+}
+
+
+
+
+
+country_event = {
+	id = bulgaria.69
+	title = bulgaria.69.t
+	desc = bulgaria.69.desc
+	picture = GFX_report_event_eng_dambuster2
+
+	fire_only_once = yes   #this means this event can only fire one time
+	is_triggered_only = yes #this means this event can't happen randomly, has to be triggered somewhere else. In our case, your national focus
+
+	option = { # This option will give the war goal
+		name = bulgaria.69.a #needs to be localized
+		ai_chance = { factor = 60 } #this factor means the AI will almost always pick this one
+		diplomatic_relation = {
+		country = TUR
+		relation = non_agression_pact
+		active = yes
+		}
+
+	news_event = {id = bulgaria.70}
+	}
+
+	option = { # Last chance to backout! Click this option and literally nothing happens
+		name = bulgaria.1236.b #needs to be localized
+		ai_chance = { factor = 0 } #AI will NOT do
+	}
+}
+
+news_event = {
+	id = bulgaria.70
+	title = bulgaria.70.t
+	desc = bulgaria.70.desc
+	picture = GFX_report_event_eng_dambuster2
+	major = yes
+
+	fire_only_once = yes   #this means this event can only fire one time
+	is_triggered_only = yes #this means this event can't happen randomly, has to be triggered somewhere else. In our case, your national focus
+
+	option = { # Only one option, just an acknowledgment by the player
+		name = bulgaria.70.a #needs to be localized
+		ai_chance = { factor = 90 } #this factor means the AI will almost always pick this one
+
+	}
+
+}

@@ -1,0 +1,57 @@
+add_namespace = sweden
+
+country_event = {
+	id = sweden.17
+	title = sweden.17.t
+	desc = sweden.17.d
+	picture = GFX_report_event_worried_french
+
+	is_triggered_only = yes
+
+	option = {
+		name = sweden.17.a
+		ai_chance = { factor = 90 }
+		ROM = {
+			country_event = sweden.18
+			add_to_faction = ROOT
+		}
+
+	}
+
+	option = {
+		name = sweden.17.b
+		ai_chance = { factor = 10 }
+		ROM = { country_event = sweden.19 }
+	}
+}
+
+# [Country] Accepts
+country_event = {
+	id = sweden.18
+	title = sweden.18.t
+	desc = sweden.18.d
+	picture = GFX_report_event_soldiers_in_frace
+
+	is_triggered_only = yes
+
+	option = {
+		name = sweden.18.a
+		effect_tooltip = {
+			add_to_faction = FROM
+		}
+	}
+}
+
+# [Country] Refuses
+country_event = {
+	id = sweden.19
+	title = sweden.19.t
+	desc = sweden.19.d
+	picture = GFX_report_event_finnish_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = sweden.19.a
+	}
+}

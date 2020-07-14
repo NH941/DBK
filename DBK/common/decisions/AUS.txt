@@ -1,0 +1,302 @@
+AUS_stop_riots = {
+
+	AUS_riots_1 = {
+
+		icon = generic_construction
+
+		available = {
+      AND = {
+       has_completed_focus = AUS_recover_from_black_monday
+       tag = AUS
+
+      }
+		}
+
+		fire_only_once = no
+
+		cost = 50
+		days_re_enable = 20
+
+		modifier = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 200 # oh shit they are getting close!
+				AUS = {
+          has_country_flag = stocks_crash
+        }
+			}
+		}
+
+		visible = {
+      AND = {
+			 has_completed_focus = AUS_recover_from_black_monday
+       tag = AUS
+      }
+		}
+
+		remove_effect = {
+
+		}
+	}
+
+  AUS_riots_2 = {
+
+		icon = generic_construction
+
+		available = {
+      AND = {
+       has_completed_focus = AUS_recover_from_black_monday
+       tag = AUS
+       NOT = {
+        has_country_flag = riots_2
+       }
+       has_country_flag = riots_1
+      }
+		}
+
+		fire_only_once = no
+
+		cost = 50
+		days_re_enable = 20
+
+		modifier = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 200 # oh shit they are getting close!
+				AUS = {
+          has_country_flag = stocks_crash
+        }
+			}
+		}
+
+		visible = {
+      AND = {
+			 has_completed_focus = AUS_recover_from_black_monday
+       tag = AUS
+       NOT = {
+        has_country_flag = riots_2
+       }
+       has_country_flag = riots_1
+      }
+		}
+
+		remove_effect = {
+
+		}
+	}
+
+
+  AUS_riots_3 = {
+
+		icon = generic_construction
+
+		available = {
+      AND = {
+       has_completed_focus = AUS_recover_from_black_monday
+       tag = AUS
+       NOT = {
+        has_country_flag = riots_stopped
+       }
+       has_country_flag = riots_2
+      }
+		}
+
+		fire_only_once = no
+
+		cost = 50
+		days_re_enable = 20
+
+		modifier = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 200 # oh shit they are getting close!
+				AUS = {
+          has_country_flag = stocks_crash
+        }
+			}
+		}
+
+		visible = {
+      AND = {
+			 has_completed_focus = AUS_recover_from_black_monday
+       tag = AUS
+       NOT = {
+        has_country_flag = riots_stopped
+       }
+       has_country_flag = riots_2
+      }
+		}
+
+		remove_effect = {
+
+		}
+	}
+}
+
+
+
+
+
+AUS_recovery = {
+
+	AUS_recovery_1 = {
+
+		icon = generic_construction
+
+		available = {
+      AND = {
+       has_completed_focus = AUS_recover_from_black_monday
+       tag = AUS
+       NOT = {
+        has_country_flag = recovery_1
+       }
+      }
+		}
+
+		fire_only_once = no
+
+		cost = 75
+		days_re_enable = 30
+
+		modifier = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 200 # oh shit they are getting close!
+				AUS = {
+          has_country_flag = stocks_crash
+        }
+			}
+		}
+
+		visible = {
+      AND = {
+			 has_completed_focus = AUS_recover_from_black_monday
+       tag = AUS
+       NOT = {
+        has_country_flag = recovery_1
+       }
+      }
+		}
+
+		remove_effect = {
+
+		}
+	}
+
+  AUS_recovery_2 = {
+
+		icon = generic_construction
+
+		available = {
+      AND = {
+       has_completed_focus = AUS_recover_from_black_monday
+       tag = AUS
+       NOT = {
+        has_country_flag = recovery_2
+       }
+       has_country_flag = recovery_1
+      }
+		}
+
+		fire_only_once = no
+
+		cost = 50
+		days_re_enable = 20
+
+		modifier = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 200 # oh shit they are getting close!
+				AUS = {
+          has_country_flag = stocks_crash
+        }
+			}
+		}
+
+		visible = {
+      AND = {
+			 has_completed_focus = AUS_recover_from_black_monday
+       tag = AUS
+       NOT = {
+        has_country_flag = recovery_2
+       }
+       has_country_flag = recovery_1
+      }
+		}
+
+		remove_effect = {
+
+		}
+	}
+
+
+  AUS_riots_3 = {
+
+		icon = generic_construction
+
+		available = {
+      AND = {
+       has_completed_focus = AUS_recover_from_black_monday
+       tag = AUS
+       NOT = {
+        has_country_flag = stocks_recovered
+       }
+       has_country_flag = recovery_2
+      }
+		}
+
+		fire_only_once = no
+
+		cost = 50
+		days_re_enable = 20
+
+		modifier = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 200 # oh shit they are getting close!
+				AUS = {
+          has_country_flag = stocks_crash
+        }
+			}
+		}
+
+		visible = {
+      AND = {
+			 has_completed_focus = AUS_recover_from_black_monday
+       tag = AUS
+       NOT = {
+        has_country_flag = stocks_recovered
+       }
+       has_country_flag = recovery_2
+      }
+		}
+
+		remove_effect = {
+
+		}
+	}
+}
